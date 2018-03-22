@@ -11,6 +11,9 @@ clone or download the project
 cd into the root folder
 `cd restaurant-review`
 
+open the project in your editor and navigate to `js/dbhelper.js` on `line18`
+change the location to `http://localhost:${port}` leave the `/data/restaurants.json` as is.
+
 Start a simple server **note** - **for this server you need to have python installed**
 [Download the latest version](https://www.python.org/downloads/)
 
