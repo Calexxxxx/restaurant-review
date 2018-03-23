@@ -143,10 +143,10 @@ createRestaurantHTML = ( restaurant ) => {
     image.className = 'restaurant-img';
 
     // aria label
-    image.setAttribute( 'aria-label', `Image of the ${restaurant.name} restaurant in ${restaurant.neighborhood} on ${restaurant.address}` );
+    image.setAttribute( 'aria-label', restaurant.alt );
 
     // alt text
-    image.setAttribute( 'alt', `Image of the ${restaurant.name} restaurant in ${restaurant.neighborhood} on ${restaurant.address}` );
+    image.setAttribute( 'alt', restaurant.alt );
 
     image.src = DBHelper.imageUrlForRestaurant( restaurant );
     li.append( image );
